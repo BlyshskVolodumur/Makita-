@@ -98,3 +98,9 @@ footer{border-top:1px solid var(--line);background:var(--surface)}
 .menu .btn.theme-btn,.menu .btn.call-btn,.menu .btn.menu-btn{background:var(--bg);color:var(--fg);border:1px solid var(--line);filter:none}
 .call-btn span{display:none}.call-btn{width:44px;padding:0}
 }
+@media(max-width:720px){
+.bar{gap:6px}
+.logo{flex:0 1 auto;min-width:0}
+.logo img{width:132px;max-width:100%}
+.theme-btn,.call-btn,.menu-btn{width:40px!important;height:40px!important}
+}
