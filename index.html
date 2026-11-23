@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Makita+ Оренда інструменту</title>
+<meta name="description" content="Оренда інструменту в Івано-Франківську: відбійні молотки, перфоратори, віброплити, генератори, зварювальні апарати та інше.">
+<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <div class="wrap bar">
+    <a class="logo" href="#tools" aria-label="Makita+, на головну"><img src="assets/logo.svg" alt="Makita+" width="200" height="33"></a>
+    <nav class="menu">
+      <div class="nav-links" id="navLinks">
+        <a class="nav" href="#tools">Каталог</a>
+        <a class="nav" href="#contacts">Адреса</a>
+      </div>
+      <button class="btn hv theme-btn" id="theme" aria-label="Змінити тему"><svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button>
+      <a class="btn hv call-btn" href="tel:+380504387853" aria-label="Зателефонувати +380 50 438 78 53"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.8a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><span>Зателефонувати</span></a>
+      <button class="btn hv menu-btn" id="menuBtn" aria-label="Меню" aria-expanded="false" aria-controls="navLinks"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section id="list">
+    <div class="wrap hero">
+      <h1>Оренда інструменту в Івано-Франківську</h1>
+      <p class="lead">Оберіть інструмент, щоб побачити характеристики й зателефонувати.</p>
+    </div>
+    <div class="wrap pad"><div class="grid" id="grid"></div></div>
+
+    <div class="wrap" style="padding-bottom:72px">
+      <div class="info" id="contacts">
+        <div>
+          <h2>Де нас знайти</h2>
+          <div class="block"><div class="lab">Адреса</div><div class="val">вул. Вовчинецька, 122Б</div><div style="color:var(--muted)">Івано-Франківськ</div></div>
+          <div class="block"><a class="btn hv" href="https://maps.app.goo.gl/JAFYfJeibEDbyb6y9" target="_blank" rel="noopener">Відкрити в Google Maps</a></div>
+          <div class="block"><div class="lab">Телефон</div><a class="val ph hv" href="tel:+380504387853">+380 50 438 78 53</a></div>
+        </div>
+        <div>
+          <div class="lab" style="margin-top:6px">Графік роботи</div>
+          <div class="rows hours">
+            <div class="row"><span>Понеділок</span><span>09:00–17:00</span></div>
+            <div class="row"><span>Вівторок</span><span>09:00–17:00</span></div>
+            <div class="row"><span>Середа</span><span>09:00–17:00</span></div>
+            <div class="row"><span>Четвер</span><span>09:00–17:00</span></div>
+            <div class="row"><span>П’ятниця</span><span>09:00–17:00</span></div>
+            <div class="row"><span>Субота</span><span>09:00–13:00</span></div>
+            <div class="row"><span>Неділя</span><span>Зачинено</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="detail" hidden>
+    <div class="wrap"><a class="btn hv back" href="#tools">← Усі інструменти</a></div>
+    <div class="wrap detail">
+      <div class="photo" id="dPhoto"></div>
+      <div>
+        <h1 id="dName" style="font-size:40px"></h1>
+        <div class="rows block">
+          <div class="row"><span>Ціна</span><span class="red">Уточнюйте</span></div>
+        </div>
+        <div class="sub">Характеристики</div>
+        <div class="rows" id="dSpecs"></div>
+        <div class="block">
+          <a class="btn hv" href="tel:+380504387853" style="height:52px;font-size:17px;padding:0 32px">Зателефонувати</a>
+          <div class="lab" style="margin-top:10px;text-transform:none;letter-spacing:0;font-size:15px">+380 50 438 78 53</div>
+        </div>
+      </div>
+    </div>
+    <div class="wrap others pad">
+      <h2>Інші інструменти</h2>
+      <div class="grid" id="others"></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div>
+      <a class="logo" href="#tools" aria-label="Makita+, на головну"><img src="assets/logo.svg" alt="Makita+" width="170" height="28"></a>
+      <p>Оренда інструменту в Івано-Франківську.</p>
+    </div>
+    <div class="col">
+      <h4>Меню</h4>
+      <a class="nav" href="#tools" style="padding:0">Каталог</a>
+      <a class="nav" href="#contacts" style="padding:0">Адреса й графік</a>
+    </div>
+    <div class="col">
+      <h4>Контакти</h4>
+      <a class="nav" href="tel:+380504387853" style="padding:0">+380 50 438 78 53</a>
+      <span style="color:var(--muted)">вул. Вовчинецька, 122Б,<br>Івано-Франківськ</span>
+    </div>
+  </div>
+  <div class="wrap"><div class="copy">© 2026 Makita+</div></div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
